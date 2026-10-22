@@ -1,0 +1,12 @@
+name: drill-ci
+on: push
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "drill lint job passed"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "drill build job started"
+      - run: exit 1
